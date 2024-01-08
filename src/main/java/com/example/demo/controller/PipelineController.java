@@ -19,5 +19,10 @@ public class PipelineController {
 	public ResponseEntity<String> getView(){
 		return new ResponseEntity<String>("AWS Deployment",HttpStatus.OK);
 	}
+	
+	@GetMapping("/events")
+	public ResponseEntity<String> getEvents(){
+		return new ResponseEntity<String>("Get all the events",HttpStatus.OK);
+	}
 
 }
